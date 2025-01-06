@@ -114,9 +114,7 @@ class _MultiImageCaptureState extends State<MultiImageCapture> {
                     flex: 1,
                     child: ElevatedButton(
                       onPressed: () {
-                        if(capturedImages.contains(_dummyImageFile)) {
-                          captureImage(context);
-                        }
+                             captureImage(context);
                       },
                       style: ElevatedButton.styleFrom(
                         shape: const CircleBorder(),
