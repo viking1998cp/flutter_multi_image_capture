@@ -114,6 +114,7 @@ class _MultiImageCaptureState extends State<MultiImageCapture> {
                     flex: 1,
                     child: ElevatedButton(
                       onPressed: () {
+                          EasyLoading.show(status: 'waiting...');
                              captureImage(context);
                       },
                       style: ElevatedButton.styleFrom(
